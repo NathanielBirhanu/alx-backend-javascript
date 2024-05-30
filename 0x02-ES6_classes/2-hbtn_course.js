@@ -1,3 +1,4 @@
+// HolbertonCourse.js
 export default class HolbertonCourse {
   constructor(name, length, students) {
     this._name = this.validateString(name, 'Name');
@@ -29,21 +30,21 @@ export default class HolbertonCourse {
     this._students = this.validateArray(newStudents, 'Students');
   }
 
-  validateString(value, attributeName) {
+  this.validateString(value, attributeName) {
     if (typeof value !== 'string') {
       throw new TypeError(`${attributeName} must be a string`);
     }
     return value;
   }
 
-  validateNumber(value, attributeName) {
+  this.validateNumber(value, attributeName) {
     if (typeof value !== 'number') {
       throw new TypeError(`${attributeName} must be a number`);
     }
     return value;
   }
 
-  validateArray(value, attributeName) {
+  this.validateArray(value, attributeName) {
     if (!Array.isArray(value)) {
       throw new TypeError(`${attributeName} must be an array`);
     }
